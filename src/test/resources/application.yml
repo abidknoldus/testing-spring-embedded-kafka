@@ -1,0 +1,14 @@
+
+spring:
+  profiles:
+  active: test
+  application:
+    name: Ebeddedkafka
+  kafka:
+    bootstrap-servers: localhost:39092
+    consumer:
+      group-id: ebedded-kafka-group-id
+      client-id: ebedded-kafka-client-id
+      enable-auto-commit: false
+      auto-offset-reset: earliest
+      max-poll-records: 1
